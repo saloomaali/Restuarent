@@ -29,6 +29,7 @@ class Customer{
 
         this.dosa = dosa * 8;
     }
+
 }
 public class Main {
     public static void main(String[] args) {
@@ -39,12 +40,20 @@ public class Main {
         String name = input.next();
         long phnNo = input.nextLong();
 
+        Customer c = new Customer();
+
+
         while(true){
             System.out.println("select your items \n 1 - Tea-10 \n 2 - Coffee-15 \n 3 - Snacks-10 \n 4 - idli-8 \n " +
                     " 5 - dosa-6\n 6 - Generate Bill \n 7 - view all transaction \n 8 - exit");
             int n = input.nextInt();
 
             switch (n){
+
+                case 1 :
+                    System.out.println("Enter the count of tea");
+                    int tea = input.nextInt();
+                    c.ctea(tea);
 
 
             }
