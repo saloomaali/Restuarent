@@ -62,9 +62,14 @@ public class Main {
                     c.coffee = coffee;
 
                 case 3 :
-                    System.out.println("Enter count of coffee");
+                    System.out.println("Enter count of snacks");
                     int snacks = input.nextInt();
                     c.snacks = snacks;
+
+                case 4 :
+                    System.out.println("Enter count of idli");
+                    int idli = input.nextInt();
+                    c.idli = idli;
 
             }
         }
