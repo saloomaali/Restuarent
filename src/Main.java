@@ -1,7 +1,53 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+class Customer{
+    String name;
+    long phnNo;
+    int tea = 0;
+    int coffee = 0;
+    int snacks = 0;
+    int idli = 0;
+    int dosa = 0;
 
+    public void ctea(int tea){
+
+        this.tea = tea * 10;
+    }
+    public void ccoffee(int coffee){
+
+        this.coffee = coffee * 15;
+    }
+    public void csnacks(int snacks){
+
+        this.snacks = snacks * 10;
+    }
+    public void cidli(int idli){
+
+        this.idli = idli * 8;
+    }
+    public void cdosa(int dosa){
+
+        this.dosa = dosa * 8;
+    }
+}
 public class Main {
     public static void main(String[] args) {
 
+        ArrayList<Customer> customers = new ArrayList<Customer>();
+        System.out.println("enter customer name and phn number");
+        Scanner input = new Scanner(System.in);
+        String name = input.next();
+        long phnNo = input.nextLong();
+
+        while(true){
+            System.out.println("select your items \n 1 - Tea-10 \n 2 - Coffee-15 \n 3 - Snacks-10 \n 4 - idli-8 \n " +
+                    " 5 - dosa-6\n 6 - Generate Bill \n 7 - view all transaction \n 8 - exit");
+            int n = input.nextInt();
+
+            switch (n){
+
+
+            }
+        }
     }
 }
