@@ -61,6 +61,11 @@ public class Main {
                     int coffee = input.nextInt();
                     c.coffee = coffee;
 
+                case 3 :
+                    System.out.println("Enter count of coffee");
+                    int snacks = input.nextInt();
+                    c.snacks = snacks;
+
             }
         }
     }
